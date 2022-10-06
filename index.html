@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feath</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <button id="mybtn">
+        Open modal
+    </button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1 id="brugernavn"></h1>
+            <textarea id="redigerPip" cols="30" rows="10"></textarea>
+            <button id="opdater">Opdater pip</button>
+            <button id="sletPip">Slet pip</button>
+        </div>
+    </div>
+
+<div class="grid"> 
+    
+    <div class="column">
+        <img src="img/feather.svg" alt="feather icon" class="img_logo">    
+    </div>
+        
+    <div class="column">
+
+        <div>
+            <div class="icon_left">
+                <a href="index.html"><img src="img/home.svg" alt="home icon" class="img_list"> </a>
+            </div>
+           <div class="text_right">
+                <a href="index.html"><h1>Home</h1></a>
+           </div>
+        </div>
+        
+        <div>
+            <div class="icon_left">
+                <img src="img/hash.svg" alt="hashtag icon" class="img_list">
+            </div>
+            <div class="text_right">
+                <h1>Explore</h1>
+            </div>
+        </div>
+
+        <div>
+            <div class="icon_left">
+                <img src="img/bell.svg" alt="hashtag icon" class="img_list">
+            </div>
+            <div class="text_right">
+                <h1>Notifications</h1>
+            </div>
+        </div>
+
+        <div>
+            <div class="icon_left">
+                <img src="img/mail.svg" alt="hashtag icon" class="img_list">
+            </div>
+            <div class="text_right">
+                <h1>Messages</h1>
+            </div>
+        </div>
+
+        <div>
+            <div class="icon_left">
+                <img src="img/bookmark.svg" alt="hashtag icon" class="img_list">
+            </div>
+            <div class="text_right">
+                <h1>Bookmarks</h1>
+            </div>
+        </div>
+
+        <div>
+            <div class="icon_left">
+                <img src="img/list.svg" alt="hashtag icon" class="img_list">
+            </div>
+            <div class="text_right">
+                <h1>Lists</h1>
+            </div>
+        </div>
+
+        <div>
+            <div class="icon_left">
+                <img src="img/user.svg" alt="hashtag icon" class="img_list">
+            </div>
+            <div class="text_right">
+                <h1>Profile</h1>
+            </div>
+        </div>
+
+        <div>
+            <div class="icon_left">
+                <img src="img/more-horizontal.svg" alt="hashtag icon" class="img_list">
+            </div>
+            <div class="text_right">
+                <h1>More</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="header">
+            <div class="header_left">
+                <h1>Home</h1>
+                <form id="pip">
+                    <textarea name="textarea" id="textarea" cols="100" rows="5" placeholder="Skriv dit pip" required></textarea>
+                    <input type="username" name="username" id="username" class="username" placeholder="Brugernavn" required>
+                    <input id="submit" name="submitbutton" type="submit" value="Slå op" class="button">
+                </form>
+                <div>
+                    <div id="formerPips" class="formerpips">
+                    </div>
+                 </div>
+
+            
+                
+ 
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="searchbar">
+            <form class="example" action="./public/index.php">
+                <input type="text" placeholder="Søg.." name="search2">
+                <button type="submit"><img src="img/search.svg" alt="search icon" class="icon_search"></button>
+              </form>
+            <div>
+                <p id="demo">Fetch a file to change this text.</p>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+
+    </div>
+
+    <footer>
+        
+    </footer>
+ </div>
+
+ <script src="script.js"></script>
+ <template id="pipcard">
+    <buttom id="editButton">
+        
+        <img src="img/edit.svg" alt="edit button">
+        <p>TEST</p>
+    </buttom> 
+</template>
+</body>
+
+</html>
